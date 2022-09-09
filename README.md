@@ -11,11 +11,11 @@
 * a repo for the Android app: https://github.com/fpmi-hci/proekt13-mobile-wall
 
 ## 🔽 How to install
-◦ Installation: Последовательность шагов, как установить приложение локально.   
+* Open the web application here (a link will appear later)
+* Or download the Android app here (a link will appear later)
 
 ## 📜 How to use
-◦ Usage: Рекомендации как использовать приложение после установки. Может содержать скриншоты.   
-
+*To be updated...*
 
 ## 👫 Contributors
 * **Ekaterina Vroublevskaia** - Project Manager, .NET and Angular Developer.
