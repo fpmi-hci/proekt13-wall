@@ -8,13 +8,14 @@ on:
     paths:
       - 'NotificationService/**'
 
-  workflow_dispatch:
-
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses : actions/checkout@v2
+
       # Runs a single command using the runners shell
       - name: Test
         run: go test ./...
