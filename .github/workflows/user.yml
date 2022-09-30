@@ -9,7 +9,7 @@ on:
       - 'UserService/**'
 
 jobs:
-  test:
+  build_and_test:
     runs-on: windows-2019
 
     steps:
@@ -20,6 +20,9 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '6.0.x'
+
+      - name: Build
+        run: dotnet publish .\UserService\UserService\UserService.csproj -c Release -o /app/publish
 
       - name: Test
         run: dotnet test UserService
