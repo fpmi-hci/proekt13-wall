@@ -1,7 +1,18 @@
-FROM alpine:3.8
+FROM golang:1.18-alpine AS builder
 
-RUN apk --no-cache add ca-certificates
+WORKDIR /app
 
-ADD notification /
+ADD . ./
+
+RUN apk update && apk add git
+
+RUN go mod download && go mod verify
+
+RUN go build -o notification ./cmd
+
+FROM alpine:latest
+
+WORKDIR /app
+COPY --from=builder /app/notification  /app/
 
 CMD ["./notification"]
