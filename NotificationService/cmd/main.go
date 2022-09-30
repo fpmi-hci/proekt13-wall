@@ -5,10 +5,6 @@ import (
 	"net/http"
 )
 
-func Hello() string {
-	return "Hello"
-}
-
 type handler struct{}
 
 func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
@@ -16,6 +12,10 @@ func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		w.WriteHeader(500)
 	}
+}
+
+func Hello() string {
+	return "Hello"
 }
 
 func main() {
