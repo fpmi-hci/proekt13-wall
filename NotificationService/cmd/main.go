@@ -2,11 +2,13 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 )
 
 type handler struct{}
 
+// ServeHTTP serves HTTP
 func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	_, err := w.Write([]byte("Hello"))
 	if err != nil {
@@ -14,11 +16,15 @@ func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// Hello returns hello
 func Hello() string {
 	return "Hello"
 }
 
 func main() {
 	fmt.Println("Hello...")
-	http.ListenAndServe(":8081", handler{})
+	err := http.ListenAndServe(":8081", handler{})
+	if err != nil {
+		log.Fatal("server failed")
+	}
 }
