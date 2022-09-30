@@ -2,6 +2,7 @@ package main
 
 import "testing"
 
+// TestHello tests hello
 func TestHello(t *testing.T) {
 	tests := []struct {
 		name string

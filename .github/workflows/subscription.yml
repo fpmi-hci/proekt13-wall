@@ -1,12 +1,12 @@
-name: NotificationService-CI
+name: SubscriptionService-CI
 
 on:
   push:
     paths:
-      - 'NotificationService/**'
+      - 'SubscriptionService/**'
   pull_request:
     paths:
-      - 'NotificationService/**'
+      - 'SubscriptionService/**'
 
 jobs:
   test:
@@ -19,7 +19,7 @@ jobs:
       - name: Lint
         uses: golangci/golangci-lint-action@v3
         with:
-          working-directory: NotificationService
+          working-directory: SubscriptionService
 
       - name: Test
-        run: cd NotificationService && go test ./...
+        run: cd SubscriptionService && go test ./...
