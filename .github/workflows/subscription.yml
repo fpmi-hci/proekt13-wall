@@ -16,6 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Build
+        run: cd SubscriptionService && go build -o subscription ./cmd
+
       - name: Lint
         uses: golangci/golangci-lint-action@v3
         with:
