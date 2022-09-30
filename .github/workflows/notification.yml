@@ -16,11 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Use project dir
-        run: cd NotificationService
-
       - name: Lint
         uses: golangci/golangci-lint-action@v3
+        with:
+          working-directory: NotificationService
 
       - name: Test
-        run: go test ./...
+        run: go test NotificationService/...
