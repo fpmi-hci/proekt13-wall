@@ -1,6 +1,5 @@
 var builder = WebApplication.CreateBuilder(args);
 
-Console.WriteLine("trigger CI");
 // Add services to the container.
 
 builder.Services.AddControllers();
