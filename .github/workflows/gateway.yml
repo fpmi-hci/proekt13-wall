@@ -1,0 +1,28 @@
+name: Gateway-CI
+
+on:
+  push:
+    paths:
+      - 'Gateway/**'
+  pull_request:
+    paths:
+      - 'Gateway/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: cd Gateway && go build -o subscription ./cmd
+
+      - name: Lint
+        uses: golangci/golangci-lint-action@v3
+        with:
+          working-directory: Gateway
+
+      - name: Test
+        run: cd Gateway && go test ./...
