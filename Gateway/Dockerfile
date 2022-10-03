@@ -4,8 +4,6 @@ WORKDIR /app
 
 ADD . ./
 
-RUN apk update && apk add git
-
 RUN go mod download && go mod verify
 
 RUN go build -o gateway ./cmd
