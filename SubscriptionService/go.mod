@@ -1,0 +1,1 @@
+module github.com/fpmi-hci/proekt13-wall/subscription

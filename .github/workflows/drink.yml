@@ -24,5 +24,8 @@ jobs:
       - name: Build
         run: dotnet publish .\DrinkService\DrinkService\DrinkService.csproj -c Release -o /app/publish
 
+      - name: Lint
+        run: dotnet format --verify-no-changes .\DrinkService\
+
       - name: Test
         run: dotnet test DrinkService
