@@ -24,5 +24,8 @@ jobs:
       - name: Build
         run: dotnet publish .\DiaryService\DiaryService\DiaryService.csproj -c Release -o /app/publish
 
+      - name: Lint
+        run: dotnet format --verify-no-changes .\DiaryService\
+
       - name: Test
         run: dotnet test DiaryService
