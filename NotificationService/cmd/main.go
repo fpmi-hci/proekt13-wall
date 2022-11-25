@@ -8,7 +8,7 @@ import (
 
 type handler struct{}
 
-// ServeHTTP serves HTTP!
+// ServeHTTP serves HTTP
 func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	_, err := w.Write([]byte("Hello"))
 	if err != nil {
