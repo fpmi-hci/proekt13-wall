@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinkService", "DrinkService\DrinkService.csproj", "{CAFB5A22-64A5-4ED6-803D-406898DABB76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{282E8F8A-CE33-4039-9B87-F5127DB76F26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{CAFB5A22-64A5-4ED6-803D-406898DABB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAFB5A22-64A5-4ED6-803D-406898DABB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAFB5A22-64A5-4ED6-803D-406898DABB76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{282E8F8A-CE33-4039-9B87-F5127DB76F26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{282E8F8A-CE33-4039-9B87-F5127DB76F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{282E8F8A-CE33-4039-9B87-F5127DB76F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{282E8F8A-CE33-4039-9B87-F5127DB76F26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
