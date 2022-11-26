@@ -13,7 +13,7 @@ public static class Module
 
         services.AddEntityFrameworkNpgsql()
             .AddDbContext<DrinkServiceDbContext>(dbContext =>
-                dbContext.UseNpgsql("Server=127.0.0.1;Port=5432;User Id=postgres;Password=root;Database=DrinkChoice;"), ServiceLifetime.Transient);//Environment.GetEnvironmentVariable("pg_endpoint")
+                dbContext.UseNpgsql(Environment.GetEnvironmentVariable("pg_endpoint")), ServiceLifetime.Transient);
 
         return services;
     }
