@@ -24,5 +24,8 @@ jobs:
       - name: Build
         run: dotnet publish .\UserService\UserService\UserService.csproj -c Release -o /app/publish
 
+      - name: Lint
+        run: dotnet format --verify-no-changes .\UserService\
+
       - name: Test
         run: dotnet test UserService
