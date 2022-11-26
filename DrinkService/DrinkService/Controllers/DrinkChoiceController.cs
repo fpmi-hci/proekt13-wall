@@ -3,11 +3,11 @@
 namespace DrinkService.Controllers;
 
 [ApiController]
-public class DrinkChoiceController: ControllerBase
+public class DrinkChoiceController : ControllerBase
 {
     public DrinkChoiceController()
     {
-        
+
     }
 
     [HttpGet("getString")]
