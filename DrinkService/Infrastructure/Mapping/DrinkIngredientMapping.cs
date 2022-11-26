@@ -28,7 +28,7 @@ public class DrinkIngredientMapping : EntityMapping<DrinkIngredient>
 
     private static void ConfigureUniqueKeys(EntityTypeBuilder<DrinkIngredient> builder)
     {
-        builder.HasIndex(x => new {x.DrinkId, x.IngredientId}).IsUnique();
+        builder.HasIndex(x => new { x.DrinkId, x.IngredientId }).IsUnique();
     }
 
     private static void ConfigureForeignKeys(EntityTypeBuilder<DrinkIngredient> builder)

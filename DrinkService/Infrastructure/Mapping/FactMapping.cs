@@ -7,7 +7,7 @@ using Infrastructure.Model;
 
 namespace Infrastructure.Mapping;
 
-public class FactMapping: EntityMapping<Fact>
+public class FactMapping : EntityMapping<Fact>
 {
     public override void Configure(EntityTypeBuilder<Fact> builder)
     {

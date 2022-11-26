@@ -32,9 +32,9 @@ public class CollectionMapping : EntityMapping<Collection>
 
     private static void ConfigureUniqueKeys(EntityTypeBuilder<Collection> builder)
     {
-        builder.HasIndex(x => new {x.Name, x.UserId}).IsUnique();
-    } 
-    
+        builder.HasIndex(x => new { x.Name, x.UserId }).IsUnique();
+    }
+
     private static void ConfigureForeignKeys(EntityTypeBuilder<Collection> builder)
     {
         builder.HasMany(x => x.Drinks).WithMany(x => x.Collections);

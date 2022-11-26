@@ -2,7 +2,7 @@
 
 namespace Infrastructure.Model;
 
-public class Ingredient: EntityWithId<Guid>
+public class Ingredient : EntityWithId<Guid>
 {
     public string Name { get; set; }
 }
