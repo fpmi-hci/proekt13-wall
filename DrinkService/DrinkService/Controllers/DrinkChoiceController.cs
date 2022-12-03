@@ -1,18 +1,35 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DrinkService.Interfaces;
+using DrinkService.Model;
+using Infrastructure.Model;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DrinkService.Controllers;
 
 [ApiController]
 public class DrinkChoiceController : ControllerBase
 {
-    public DrinkChoiceController()
+    private readonly IDrinkChoiceService _choiceService;
+    
+    public DrinkChoiceController(IDrinkChoiceService service)
     {
-
+        _choiceService = service;
     }
 
-    [HttpGet("getString")]
-    public ActionResult<string> GetString(int number)
+    [HttpGet("random")]
+    public ActionResult<Drink> Random()
     {
-        return Ok($"string {number}");
+        return Ok(_choiceService.GetRandomDrink());
+    }
+    
+    [HttpGet("fromCollection")]
+    public ActionResult<Drink> FromCollection(Guid userId, string collectionName)
+    {
+        return Ok(_choiceService.GetDrinkFromCollection(userId, collectionName));
+    }
+    
+    [HttpGet("byMood")]
+    public ActionResult<Drink> ByMood([FromQuery] MoodFilterModel filter)
+    {
+        return Ok(_choiceService.GetDrinkByMood(filter));
     }
 }
