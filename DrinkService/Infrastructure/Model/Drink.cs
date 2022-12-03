@@ -11,13 +11,13 @@ public class Drink : EntityWithId<Guid>
     public string Receipt { get; set; }
 
     public int Strength { get; set; }
-    
+
     public bool IsStrong { get; set; }
 
     public bool IsMilk { get; set; }
-    
+
     public bool IsHot { get; set; }
-    
+
     public Guid NutritionId { get; set; }
 
     #region NavigationProperties

@@ -9,7 +9,7 @@ namespace DrinkService.Controllers;
 public class DrinkChoiceController : ControllerBase
 {
     private readonly IDrinkChoiceService _choiceService;
-    
+
     public DrinkChoiceController(IDrinkChoiceService service)
     {
         _choiceService = service;
@@ -20,13 +20,13 @@ public class DrinkChoiceController : ControllerBase
     {
         return Ok(_choiceService.GetRandomDrink());
     }
-    
+
     [HttpGet("fromCollection")]
     public ActionResult<Drink> FromCollection(Guid userId, string collectionName)
     {
         return Ok(_choiceService.GetDrinkFromCollection(userId, collectionName));
     }
-    
+
     [HttpGet("byMood")]
     public ActionResult<Drink> ByMood([FromQuery] MoodFilterModel filter)
     {
