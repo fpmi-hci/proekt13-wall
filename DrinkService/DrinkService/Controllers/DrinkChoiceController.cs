@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace DrinkService.Controllers;
 
 [ApiController]
+[Route("choice/")]
 public class DrinkChoiceController : ControllerBase
 {
     private readonly IDrinkChoiceService _choiceService;
