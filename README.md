@@ -11,11 +11,11 @@
 * a repo for the Android app: https://github.com/fpmi-hci/proekt13-mobile-wall
 
 ## 🔽 How to install
-* Open the web application here (a link will appear later)
-* Or download the Android app here (a link will appear later)
+* You don't need to install the web application, just use it.
+* To install the Android app you need to download the apk file and run it.
 
 ## 📜 How to use
-*To be updated...*
+* To use our app you need only to create an account and track your coffee!
 
 ## 👫 Contributors
 * **Ekaterina Vroublevskaia** - Project Manager, .NET and Angular Developer.
