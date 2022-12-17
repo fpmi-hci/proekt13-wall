@@ -1,3 +1,5 @@
+using DrinkService.Interfaces;
+using DrinkService.Services;
 using Infrastructure;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -23,6 +25,8 @@ builder.Services.AddCors(o =>
 // }).AddJwtAuthentication().AddBasicNsAuthentication(); //custom extensions
 
 builder.Services.AddInfrastructure();
+
+builder.Services.AddScoped<IDrinkChoiceService, DrinkChoiceService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
