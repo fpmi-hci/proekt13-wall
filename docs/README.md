@@ -4,5 +4,4 @@ Task 3: https://docs.google.com/document/d/1_SW5U31WiuXLjUClwg8lCgYIod7S72TciVcG
 Task 4: https://docs.google.com/document/d/1wcoiJdZBjSRVOBLZ7ckNuXPraBy0j8P2CcUpDdztwi0/edit?usp=share_link   
 Task 5: https://docs.google.com/document/d/1I0OaoydGhuD1mUe-75RBzQw3yrbB3FWYrRerydoNmNg/edit?usp=share_link   
 Task 6: https://docs.google.com/document/d/16cuAOXd6iSybsKbZaYNeZJCSLzWNykW0-txQ9_FZA-M/edit?usp=sharing   
-Task 7:   
-Task 8:   
+Final report: https://docs.google.com/document/d/1kYnXQnAvuN7QkDWMqBvpXQhuN5bHGyr8d-pJgOZm89Y/edit?usp=share_link    
